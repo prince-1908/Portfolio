@@ -11,7 +11,9 @@ const skillsParent = document.getElementById("skillsParent");
 const progessBarsParent = document.querySelectorAll(".progressBarsParent");
 const projectClass = document.querySelectorAll(".project-class");
 const projectCarousel = document.getElementById("project-carousel");
-
+const carouselImg = document.querySelectorAll(".carousel-img");
+const carouselSlides = document.querySelectorAll(".carousel-slides");
+const contactClick = document.querySelectorAll(".contactclick");
 const detailFunc = (index) => {
     skillDetailImg.src = imgUrls[index];
     progressLevel[0].style.width = `${proficiency[index]}%`;
@@ -82,22 +84,35 @@ function showSlides(n) {
 }
 
 
-Array.from(projectClass).forEach((element, index) => {
-    element.addEventListener('click', function(e){
+Array.from(projectClass).forEach((element, projectIndex) => {
+    element.addEventListener('click', function (e) {
         e.stopPropagation();
         projectCarousel.classList.remove("hidden");
         projectCarousel.classList.add("block");
+        Array.from(carouselImg).forEach((element, index) => {
+            element.src = projectsImgs[projectIndex][index];
+        });
+        Array.from(carouselSlides).map((element, index) => {
+            element.src = projectsImgs[projectIndex][index];
+        });
     });
 });
 
 document.addEventListener('click', (e) => {
-    if(projectCarousel.classList.contains("block")){
-        if(e.target !== projectCarousel && !projectCarousel.contains(e.target)){
+    if (projectCarousel.classList.contains("block")) {
+        if (e.target !== projectCarousel && !projectCarousel.contains(e.target)) {
             projectCarousel.classList.add("hidden");
         }
     }
 });
 
+Array.from(contactClick).map((element, index) => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.open(contactUrls[index], '_blank');
+    }
+    )
+});
 const imgUrls = [
     "../images/logos/HTML5_logo_and_wordmark.svg",
     "../images/logos/CSS3_logo_and_wordmark.svg",
@@ -140,9 +155,23 @@ const projectsImgs = [
         "./images/projects/skyWatch/Screenshot (465).png",
         "./images/projects/skyWatch/Screenshot (466).png",
         "./images/projects/skyWatch/Screenshot (467).png",
+    ],
+    [
+        "./images/projects/todo/267878400-878bff35-b14e-4dc0-82ee-421bc89ff901.png",
+        "./images/projects/todo/267878472-6c8200c0-2bc1-41fc-8326-0152294a6fa5.png",
+        "./images/projects/todo/267878499-6f38e80d-57c1-4f3c-bed2-06ec056604bb.png",
+        "./images/projects/todo/267878534-28d95224-bacd-4ae6-b0e7-47797a00bad0.png",
+        "./images/projects/todo/267878566-6cb7dda8-e14e-4049-800b-ca4d9099ea84.png",
+        "./images/projects/todo/267878400-878bff35-b14e-4dc0-82ee-421bc89ff901.png"
     ]
 ];
 
+const contactUrls = [
+    "mailto:princesinghchouhan7470@gmail.com",
+    "https://www.linkedin.com/in/prince-singh-chouhan/",
+    "https://github.com/prince-1908",
+    "https://twitter.com/Prince_1908"
+];
 const proficiency = [100, 100, 95, 85, 85, 75, 75, 75, 100, 100, 90, 75, 95, 90];
 const problemSolvingSkills = [100, 100, 80, 80, 75, 70, 75, 70, 100, 100, 100, 100, 100, 100];
 const experienceLevel = [100, 100, 75, 75, 50, 50, 50, 50, 100, 100, 75, 50, 75, 75];
