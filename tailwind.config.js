@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/*.{js}", "./*.html"],
   theme: {
+    screens: {
+      'tablet': {'max': '1024px'}
+    },
     extend: {},
   },
   plugins: [],

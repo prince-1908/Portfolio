@@ -10,18 +10,18 @@
     <title>Prince Singh Chouhan</title>
 </head>
 
-<body class="mx-16 py-0 m-0 bg-gradient-to-r from-[#000000] to-[#130f40] text-white">
-    <header class="flex h-[100vh] items-center">
-        <div class="grow flex flex-col justify-center">
-            <h1 class="font-bold pb-2 text-9xl"><span class="text-[#FFD700]">PRINCE</span> SINGH CHOUHAN</h1>
+<body class="tablet:mx-8 mx-16 py-0 m-0 bg-gradient-to-r from-[#000000] to-[#130f40] text-white">
+    <header class="tablet:flex-col tablet:justify-center tablet:gap-8 flex h-[100vh] items-center">
+        <div class="grow flex flex-col justify-center border tablet:text-center tablet:grow-0">
+            <h1 class="font-bold pb-2 text-9xl"><span class="text-[#FFA500]">PRINCE</span> SINGH CHOUHAN</h1>
             <p class="font-semibold text-7xl">Front-End Web Developer</p>
         </div>
-        <div class="max-w-[500px] max-h-[500px]">
+        <div class="tablet:max-w-[800px] tablet:max-h-[800px] max-w-[500px] max-h-[500px]">
             <img src="../images/image.jpg" alt="" class="rounded-full" />
         </div>
     </header>
 
-    <main class="mb-32 mx-16">
+    <main class="tablet:mx-0 mb-32 mx-16">
         <section class="mt-32">
             <h1 class="text-7xl font-bold mb-8 text-center">About Me</h1>
             <p class="text-2xl text-justify mx-32">Highly motivated and accomplished Computer Science Graduate, holding
@@ -35,7 +35,8 @@
                 versatile skill set in web development.</p>
         </section>
         <!-- Projects -->
-        <section class="mt-32 relative grid grid-cols-2 grid-rows-2 gap-8">
+        <section class="tablet:mx-8 tablet:text-xl mt-32 relative">
+            <h1 class="text-7xl font-bold mb-8 text-center">Projects</h1>
             <div class="bg-black absolute top-0 left-0 hidden" id="project-carousel">
                 <div class="container relative">
                     <div class="mySlides">
@@ -110,120 +111,105 @@
                 </div>
             </div>
 
-            <div
-                class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
-                <h2 class="text-xl pb-2 border-b-2 font-semibold">SOC Portfolio</h2>
-
-                <div class="py-2 border-b-2">
-                    <p><b>Teck Stack:</b>Vite, React Js, Tailwind CSS</p>
+            <div class="tablet:grid-cols-1 grid grid-cols-2 grid-rows-2 gap-8">
+                <div
+                    class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
+                    <h2 class="text-xl pb-2 border-b-2 font-semibold">SOC Portfolio</h2>
+                    <div class="py-2 border-b-2">
+                        <p><b>Teck Stack:</b>Vite, React Js, Tailwind CSS</p>
+                    </div>
+                    <p class="py-2 border-b-2 grow">SOC Portfolio is a portfolio website of the School of Computers
+                        department of IPS Academy Indore, dedicated to showcasing the innovative projects, research
+                        endeavors, and academic achievements of our vibrant community.</p>
+                    <div class="mt-2 flex gap-8">
+                        <a href="https://github.com/prince-1908/socPortfolio" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                GitHub</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                        <a href="https://soc-portfolio.vercel.app/" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                Link</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                    </div>
                 </div>
-
-                <p class="py-2 border-b-2 grow">SOC Portfolio is a portfolio website of the School of Computers
-                    department of IPS Academy Indore, dedicated to showcasing the innovative projects, research
-                    endeavors, and academic achievements of our vibrant community.</p>
-
-                <div class="mt-2 flex gap-8">
-                    <a href="https://github.com/prince-1908/socPortfolio" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            GitHub</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
-
-                    <a href="https://soc-portfolio.vercel.app/" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            Link</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
+                <div
+                    class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
+                    <h2 class="text-xl pb-2 border-b-2 font-semibold">Beta List Clone</h2>
+                    <div class="py-2 border-b-2">
+                        <p><b>Teck Stack:</b> Next.js 13, Prisma, MySql, React Js, JSON</p>
+                    </div>
+                    <p class="py-2 border-b-2 grow">Beta List Clone is a project inspired by the renowned BetaList
+                        platform, which is dedicated to promoting startups and innovation. This project is designed to
+                        provide a glimpse of the features and functionality of BetaList while serving as a learning
+                        playground for developers.</p>
+                    <div class="mt-2 flex gap-8">
+                        <a href="https://github.com/prince-1908/beta-list-clone" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                GitHub</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                        <a href="https://beta-list-clone.vercel.app/" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                Link</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div
-                class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
-                <h2 class="text-xl pb-2 border-b-2 font-semibold">Beta List Clone</h2>
-
-                <div class="py-2 border-b-2">
-                    <p><b>Teck Stack:</b> Next.js 13, Prisma, MySql, React Js, JSON</p>
+                <div
+                    class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
+                    <h2 class="text-xl pb-2 border-b-2 font-semibold">SkyWatch | Weather Telling Website</h2>
+                    <div class="py-2 border-b-2">
+                        <p><b>Teck Stack:</b> HTML, CSS, Javascript</p>
+                    </div>
+                    <p class="py-2 border-b-2 grow">SkyWatch is a one-stop destination for instant global weather
+                        updates. Effortlessly access accurate forecasts for any city with our user-friendly HTML, CSS,
+                        and JavaScript-powered platform.</p>
+                    <div class="mt-2 flex gap-8">
+                        <a href="https://github.com/prince-1908/SkyWatch" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                GitHub</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                        <a href="https://sky-watch-seven.vercel.app/" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                Link</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                    </div>
                 </div>
-
-                <p class="py-2 border-b-2 grow">Beta List Clone is a project inspired by the renowned BetaList
-                    platform, which is dedicated to promoting startups and innovation. This project is designed to
-                    provide a glimpse of the features and functionality of BetaList while serving as a learning
-                    playground for developers.</p>
-
-                <div class="mt-2 flex gap-8">
-                    <a href="https://github.com/prince-1908/beta-list-clone" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            GitHub</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
-
-                    <a href="https://beta-list-clone.vercel.app/" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            Link</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div
-                class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
-                <h2 class="text-xl pb-2 border-b-2 font-semibold">SkyWatch | Weather Telling Website</h2>
-
-                <div class="py-2 border-b-2">
-                    <p><b>Teck Stack:</b> HTML, CSS, Javascript</p>
-                </div>
-
-                <p class="py-2 border-b-2 grow">SkyWatch is a one-stop destination for instant global weather
-                    updates. Effortlessly access accurate forecasts for any city with our user-friendly HTML, CSS,
-                    and JavaScript-powered platform.</p>
-
-                <div class="mt-2 flex gap-8">
-                    <a href="https://github.com/prince-1908/SkyWatch" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            GitHub</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
-
-                    <a href="https://sky-watch-seven.vercel.app/" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            Link</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div
-                class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
-                <h2 class="text-xl pb-2 border-b-2 font-semibold">Todo List</h2>
-
-                <div class="py-2 border-b-2">
-                    <p><b>Teck Stack:</b> React Js, Tailwind CSS, Firebase</p>
-                </div>
-
-                <p class="py-2 border-b-2 grow">This is a straightforward todo list project created using React.js
-                    and Vite as the build tool. The project utilizes Firebase Realtime Database to efficiently store
-                    and manage all your tasks. With this application, users can easily add, delete, edit, mark as
-                    complete, and unmark completed todos.</p>
-
-                <div class="mt-2 flex gap-8">
-                    <a href="https://github.com/prince-1908/React-Todo-List-v2.0" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            GitHub</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
-
-                    <a href="https://react-todo-list-v2-0.vercel.app/" target="_blank" class="flex gap-1">
-                        <p
-                            class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
-                            Link</p>
-                        <img src="../images/icons/external-link (2).svg" alt="">
-                    </a>
+                <div
+                    class="p-4 border border-white rounded-md flex flex-col hover:scale-[1.02] cursor-pointer hover:shadow-md hover:shadow-white transition project-class">
+                    <h2 class="text-xl pb-2 border-b-2 font-semibold">Todo List</h2>
+                    <div class="py-2 border-b-2">
+                        <p><b>Teck Stack:</b> React Js, Tailwind CSS, Firebase</p>
+                    </div>
+                    <p class="py-2 border-b-2 grow">This is a straightforward todo list project created using React.js
+                        and Vite as the build tool. The project utilizes Firebase Realtime Database to efficiently store
+                        and manage all your tasks. With this application, users can easily add, delete, edit, mark as
+                        complete, and unmark completed todos.</p>
+                    <div class="mt-2 flex gap-8">
+                        <a href="https://github.com/prince-1908/React-Todo-List-v2.0" target="_blank"
+                            class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                GitHub</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                        <a href="https://react-todo-list-v2-0.vercel.app/" target="_blank" class="flex gap-1">
+                            <p
+                                class="after:content-[''] after:bg-white after:h-[2px] after:rounded-3xl after:block after:w-full after:scale-x-0 after:transition hover:after:scale-x-100">
+                                Link</p>
+                            <img src="../images/icons/external-link (2).svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
             </div>
@@ -232,7 +218,7 @@
         <!-- SKILLS -->
         <section class="mt-32">
             <h1 class="text-7xl font-bold mb-8 text-center">SKILLS</h1>
-            <div class="w-full columns-7 skill-list">
+            <div class="tablet:columns-4 w-full columns-7 skill-list">
                 <div class="mb-4 border border-white p-2 bg-white bg-opacity-30 rounded-lg cursor-pointer hover:bg-opacity-50 transition hover:scale-105 skill-item"
                     title="Click to Expand" id="skillsParent">
                     <img src="../images/logos/HTML5_logo_and_wordmark.svg" alt="" id="skills">
@@ -361,53 +347,57 @@
 
         <section class="mt-32">
             <h1 class="text-7xl font-bold mb-8 text-center">CONTACT</h1>
-            <div class="mt-16 flex gap-8 flex-wrap justify-evenly">
-                <div class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
+            <div class="tablet:grid tablet:grid-cols-2 mt-16 flex gap-8 flex-wrap justify-evenly">
+                <div
+                    class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
                     <div class="">
                         <img src="./images/icons/icons8-mail-96.png" alt="" class="w-16">
                     </div>
-                    
+
                     <a class="text-2xl">princesinghchouhan7470@gmail.com</a>
-                    
+
                     <div class="text-xl flex gap-2">
                         <p>Mail</p>
                         <img src="./images/icons/external-link (2).svg" alt="">
                     </div>
                 </div>
 
-                <div class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
+                <div
+                    class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
                     <div class="">
                         <img src="./images/icons/icons8-linkedin-500.png" alt="" class="w-16">
                     </div>
-                    
+
                     <a class="text-2xl">prince-singh-chouhan</a>
-                    
+
                     <div class="text-xl flex gap-2">
                         <p>Link</p>
                         <img src="./images/icons/external-link (2).svg" alt="">
                     </div>
                 </div>
 
-                <div class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
+                <div
+                    class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
                     <div class="">
                         <img src="./images/icons/icons8-github-500.png" alt="" class="w-16">
                     </div>
-                    
+
                     <a class="text-2xl">prince-1908</a>
-                    
+
                     <div class="text-xl flex gap-2">
                         <p>Link</p>
                         <img src="./images/icons/external-link (2).svg" alt="">
                     </div>
                 </div>
 
-                <div class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
+                <div
+                    class="border-2 p-7 cursor-pointer hover:scale-[1.02] hover:shadow-lg hover:shadow-white transition rounded-3xl flex flex-col items-center gap-4 contactclick">
                     <div class="">
                         <img src="./images/icons/icons8-twitter-512.png" alt="" class="w-16">
                     </div>
-                    
+
                     <a class="text-2xl">Prince_1908</a>
-                    
+
                     <div class="text-xl flex gap-2">
                         <p>Link</p>
                         <img src="./images/icons/external-link (2).svg" alt="">
@@ -426,27 +416,27 @@
                     <form action="" class="grid gap-2 p-16 text-black font-semibold">
                         <label for="name"></label>
                         <input type="text" name="name" id="name"
-                            class="rounded-sm px-2 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-gray-700 placeholder:font-normal"
+                            class="rounded-sm px-2 bg-white bg-opacity-10 focus:bg-opacity-70 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-white placeholder:text-opacity-50 focus:placeholder:text-black text-white focus:text-black placeholder:font-normal"
                             placeholder="Enter your name..." required>
 
                         <label for="email"></label>
                         <input type="email" name="email" id="email"
-                            class="rounded-sm px-2 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-gray-700 placeholder:font-normal"
+                            class="rounded-sm px-2 bg-white bg-opacity-10 focus:bg-opacity-70 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-white placeholder:text-opacity-50 focus:placeholder:text-black text-white focus:text-black placeholder:font-normal"
                             placeholder="Enter your Email Address..." required>
 
                         <label for="phone"></label>
                         <input type="tel" name="phone" id="phone"
-                            class="rounded-sm px-2 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-gray-700 placeholder:font-normal"
+                            class="rounded-sm px-2 bg-white bg-opacity-10 focus:bg-opacity-70 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-white placeholder:text-opacity-50 focus:placeholder:text-black text-white focus:text-black placeholder:font-normal"
                             placeholder="Enter your Contact No...">
 
                         <label for="subject"></label>
                         <input type="text" name="subject" id="subject"
-                            class="rounded-sm px-2 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-gray-700 placeholder:font-normal"
+                            class="rounded-sm px-2 bg-white bg-opacity-10 focus:bg-opacity-70 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-white placeholder:text-opacity-50 focus:placeholder:text-black text-white focus:text-black placeholder:font-normal"
                             placeholder="Enter Subject..." required>
 
                         <label for="message"></label>
                         <textarea name="message" id="message" cols="30" rows="4"
-                            class="rounded-sm px-2 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-gray-700 placeholder:font-normal"
+                            class="rounded-sm px-2 bg-white bg-opacity-10 focus:bg-opacity-70 py-1 focus:outline-none focus:border-cyan-500 focus:ring-[3px] focus:ring-cyan-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none placeholder:text-white placeholder:text-opacity-50 focus:placeholder:text-black text-white focus:text-black placeholder:font-normal"
                             placeholder="Enter your message..." required></textarea>
 
                         <div class="mt-8 flex justify-evenly gap-8">
