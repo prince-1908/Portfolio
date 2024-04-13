@@ -14,6 +14,7 @@ const projectCarousel = document.getElementById("project-carousel");
 const carouselImg = document.querySelectorAll(".carousel-img");
 const carouselSlides = document.querySelectorAll(".carousel-slides");
 const contactClick = document.querySelectorAll(".contactclick");
+const carouselSlideDiv = document.querySelectorAll(".carousel-slide-div");
 const detailFunc = (index) => {
     skillDetailImg.src = imgUrls[index];
     progressLevel[0].style.width = `${proficiency[index]}%`;
@@ -63,6 +64,15 @@ function plusSlides(n) {
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
+}
+
+function sliderTop(){
+    Array.from(carouselSlideDiv).map((elem, index) => {
+        elem.addEventListener('click', function(){
+            let grandParent = elem.parentElement.parentElement;
+            window.scroll
+        });
+    });
 }
 
 function showSlides(n) {
